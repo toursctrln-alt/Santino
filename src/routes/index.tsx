@@ -4,6 +4,7 @@ import { toast } from "sonner";
 import avatar from "@/assets/avatar.jpg";
 import { projects, type Project } from "@/components/portfolio/data";
 import { ProjectModal } from "@/components/portfolio/ProjectModal";
+import { CardDeck } from "@/components/portfolio/CardDeck";
 
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
@@ -64,7 +65,9 @@ function Index() {
         </header>
 
         <section className="relative isolate py-8">
-          <div className="relative">
+            <div className="flex flex-col gap-14 md:flex-row md:items-center md:justify-between md:gap-10 md:px-10 lg:px-20">
+            <div className="relative">
+
 
             <div className="flex items-center gap-4">
               <div className="relative">
@@ -110,7 +113,10 @@ function Index() {
                 Contact <Arrow />
               </a>
             </nav>
-          </div>
+            </div>
+
+              <CardDeck />
+            </div>
         </section>
 
         <section id="work" className="scroll-mt-16 pt-24">
