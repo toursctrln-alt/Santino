@@ -64,7 +64,7 @@ function Index() {
       <div className="mx-auto max-w-6xl px-6 pb-24">
         <header className="flex justify-center py-10">
           <img
-            src={santinoLogo.url}
+            src={santinoLogo}
             alt="Santino"
             className="h-14 w-auto rounded-none object-contain sm:h-16"
           />
