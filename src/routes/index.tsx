@@ -58,7 +58,7 @@ function Index() {
           <span className="text-sm font-bold tracking-[0.35em] uppercase">Morel</span>
         </header>
 
-        <section className="relative isolate grid gap-12 py-8 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] lg:items-center lg:gap-16">
+        <section className="relative isolate py-8">
           <SplineBackground />
           <div className="relative">
 
