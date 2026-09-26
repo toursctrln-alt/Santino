@@ -4,6 +4,8 @@ import { toast } from "sonner";
 import avatar from "@/assets/avatar.jpg";
 import { projects, featuredImage, type Project } from "@/components/portfolio/data";
 import { ProjectModal } from "@/components/portfolio/ProjectModal";
+import { SplineBackground } from "@/components/portfolio/SplineBackground";
+
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -56,8 +58,10 @@ function Index() {
           <span className="text-sm font-bold tracking-[0.35em] uppercase">Morel</span>
         </header>
 
-        <section className="grid gap-12 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] lg:items-center lg:gap-16">
-          <div>
+        <section className="relative isolate grid gap-12 py-8 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] lg:items-center lg:gap-16">
+          <SplineBackground />
+          <div className="relative">
+
             <div className="flex items-center gap-4">
               <div className="relative">
                 <img
