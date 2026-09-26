@@ -5,6 +5,8 @@ import avatar from "@/assets/avatar.jpg";
 import { projects, type Project } from "@/components/portfolio/data";
 import { ProjectModal } from "@/components/portfolio/ProjectModal";
 import { CardDeck } from "@/components/portfolio/CardDeck";
+import santinoLogo from "@/assets/santino-logo.png.asset.json";
+
 
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
@@ -61,12 +63,18 @@ function Index() {
     >
       <div className="mx-auto max-w-6xl px-6 pb-24">
         <header className="flex justify-center py-10">
-          <span className="text-sm font-bold tracking-[0.35em] uppercase">Morel</span>
+          <img
+            src={santinoLogo.url}
+            alt="Santino"
+            className="h-14 w-auto rounded-xl object-contain sm:h-16"
+          />
         </header>
+
 
         <section className="relative isolate py-8">
             <div className="flex flex-col gap-14 md:flex-row md:items-center md:justify-between md:gap-10 md:px-10 lg:px-20">
-            <div className="relative">
+            <div className="relative rounded-2xl bg-surface p-8 sm:p-10 hairline">
+
 
 
             <div className="flex items-center gap-4">
@@ -85,6 +93,10 @@ function Index() {
 
             <h1 className="mt-8 text-4xl font-bold sm:text-5xl">Matteo Dos Santos</h1>
             <p className="mt-2 text-lg text-muted-foreground">Graphiste &amp; Créatif</p>
+            <p className="mt-3 inline-flex items-center gap-2 rounded-full bg-background px-3 py-1 text-xs font-medium hairline">
+              Créateur de Santino
+            </p>
+
             <p className="mt-6 max-w-sm text-sm leading-relaxed text-muted-foreground">
               J'imagine, je compose et je donne forme aux idées pour créer des visuels qui ont du sens.
             </p>
