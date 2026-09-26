@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { toast } from "sonner";
 import avatar from "@/assets/avatar.jpg";
-import { projects, featuredImage, type Project } from "@/components/portfolio/data";
+import { projects, type Project } from "@/components/portfolio/data";
 import { ProjectModal } from "@/components/portfolio/ProjectModal";
 import { SplineBackground } from "@/components/portfolio/SplineBackground";
 
@@ -58,7 +58,7 @@ function Index() {
           <span className="text-sm font-bold tracking-[0.35em] uppercase">Morel</span>
         </header>
 
-        <section className="relative isolate grid gap-12 py-8 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] lg:items-center lg:gap-16">
+        <section className="relative isolate py-8">
           <SplineBackground />
           <div className="relative">
 
@@ -108,27 +108,6 @@ function Index() {
             </nav>
           </div>
 
-          <button
-            onClick={() => setActive(projects[1] ?? null)}
-            className="group block w-full overflow-hidden rounded-2xl bg-surface text-left hairline"
-          >
-            <div className="overflow-hidden">
-              <img
-                src={featuredImage}
-                alt="Alpha packaging system"
-                width={1200}
-                height={1408}
-                className="aspect-[4/3] w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
-              />
-            </div>
-            <div className="flex items-end justify-between gap-4 px-6 py-5">
-              <div>
-                <p className="text-sm font-bold">Alpha</p>
-                <p className="text-xs text-muted-foreground">Packaging system</p>
-              </div>
-              <p className="text-xs text-muted-foreground">Featured</p>
-            </div>
-          </button>
         </section>
 
         <section id="work" className="scroll-mt-16 pt-24">
