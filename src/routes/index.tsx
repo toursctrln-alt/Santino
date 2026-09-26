@@ -117,7 +117,6 @@ function Index() {
 
               <CardDeck />
             </div>
-          </div>
         </section>
 
         <section id="work" className="scroll-mt-16 pt-24">
