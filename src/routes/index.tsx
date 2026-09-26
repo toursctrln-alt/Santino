@@ -86,8 +86,7 @@ function Index() {
             <h1 className="mt-8 text-4xl font-bold sm:text-5xl">Clara Morel</h1>
             <p className="mt-2 text-lg text-muted-foreground">Graphic Designer &amp; Creative</p>
             <p className="mt-6 max-w-sm text-sm leading-relaxed text-muted-foreground">
-              I build quiet identity systems that hold up in print and on screen.
-              Ten years of work, still subtracting.
+              J'imagine, je compose et je donne forme aux idées pour créer des visuels qui ont du sens.
             </p>
             <p className="mt-6 inline-flex rounded-full bg-surface px-3 py-1 text-xs text-muted-foreground hairline">
               France / Paris
