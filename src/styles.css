@@ -63,6 +63,7 @@
   --color-surface: var(--surface);
   --color-surface-strong: var(--surface-strong);
   --color-hairline: var(--hairline);
+  --color-status: var(--status);
 }
 
 :root {

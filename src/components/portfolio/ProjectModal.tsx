@@ -11,7 +11,7 @@ export function ProjectModal({
   return (
     <Dialog open={!!project} onOpenChange={(open) => !open && onClose()}>
       <DialogContent
-        showCloseButton
+
         className="max-h-[88vh] overflow-y-auto rounded-2xl border-hairline bg-background p-0 sm:max-w-3xl"
       >
         {project && (

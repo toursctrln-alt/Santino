@@ -67,7 +67,7 @@ function Index() {
                   height={816}
                   className="h-16 w-16 rounded-full object-cover"
                 />
-                <span className="absolute right-0 bottom-0 h-3.5 w-3.5 rounded-full border-2 border-background bg-[oklch(var(--status))]" />
+                <span className="absolute right-0 bottom-0 h-3.5 w-3.5 rounded-full border-2 border-background bg-status" />
               </div>
               <span className="text-xs text-muted-foreground">Available for projects</span>
             </div>
