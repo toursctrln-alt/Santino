@@ -110,7 +110,14 @@ function Index() {
                 Contact <Arrow />
               </a>
             </nav>
+          </div>
         </section>
+
+        <section id="work" className="scroll-mt-16 pt-24">
+          <div className="mb-8 flex items-end justify-between">
+            <h2 className="text-sm font-bold tracking-[0.2em] uppercase">Selected work</h2>
+            <span className="text-xs text-muted-foreground">{projects.length} projects</span>
+          </div>
           <div className="grid gap-x-6 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
             {projects.map((p) => (
               <button key={p.id} onClick={() => setActive(p)} className="group text-left">
