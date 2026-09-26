@@ -66,7 +66,7 @@ function Index() {
           <img
             src={santinoLogo.url}
             alt="Santino"
-            className="h-14 w-auto rounded-xl object-contain sm:h-16"
+            className="h-14 w-auto rounded-none object-contain sm:h-16"
           />
         </header>
 
