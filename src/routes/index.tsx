@@ -4,6 +4,7 @@ import { toast } from "sonner";
 import avatar from "@/assets/avatar.jpg";
 import { projects, type Project } from "@/components/portfolio/data";
 import { ProjectModal } from "@/components/portfolio/ProjectModal";
+import { CardDeck } from "@/components/portfolio/CardDeck";
 
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
