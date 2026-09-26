@@ -83,7 +83,7 @@ function Index() {
               <span className="text-xs text-muted-foreground">Available for projects</span>
             </div>
 
-            <h1 className="mt-8 text-4xl font-bold sm:text-5xl">Matteo Dos santos</h1>
+            <h1 className="mt-8 text-4xl font-bold sm:text-5xl">Matteo Dos Santos</h1>
             <p className="mt-2 text-lg text-muted-foreground">Graphiste &amp; Créatif</p>
             <p className="mt-6 max-w-sm text-sm leading-relaxed text-muted-foreground">
               J'imagine, je compose et je donne forme aux idées pour créer des visuels qui ont du sens.
@@ -202,10 +202,10 @@ function Index() {
         <DialogContent className="rounded-2xl border-hairline bg-background p-8 sm:max-w-lg">
           <h2 className="text-2xl font-bold">À propos</h2>
           <ul className="mt-6 space-y-3 text-sm leading-relaxed text-muted-foreground">
-            <li>— Brand identity, packaging, editorial design and signage.</li>
-            <li>— Systems first: grids, type scales, one rule per decision.</li>
-            <li>— Print production from spec sheet to press check.</li>
-            <li>— Based in Paris, working with studios and brands across Europe.</li>
+            <li>— Bac professionnel Graphisme et Plurimédia.</li>
+            <li>— BTS communication visuelle.</li>
+            <li>— Expérience en agence créative et en mairies.</li>
+            <li>— Basé à tours, je donne vie à des projets graphiques à travers l'impression.</li>
           </ul>
         </DialogContent>
       </Dialog>
