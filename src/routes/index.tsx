@@ -105,7 +105,7 @@ function Index() {
           </div>
 
           <button
-            onClick={() => setActive(projects[1])}
+            onClick={() => setActive(projects[1] ?? null)}
             className="group block w-full overflow-hidden rounded-2xl bg-surface text-left hairline"
           >
             <div className="overflow-hidden">
