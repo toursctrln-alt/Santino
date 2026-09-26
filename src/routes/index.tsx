@@ -83,8 +83,8 @@ function Index() {
               <span className="text-xs text-muted-foreground">Available for projects</span>
             </div>
 
-            <h1 className="mt-8 text-4xl font-bold sm:text-5xl">Clara Morel</h1>
-            <p className="mt-2 text-lg text-muted-foreground">Graphic Designer &amp; Creative</p>
+            <h1 className="mt-8 text-4xl font-bold sm:text-5xl">Matteo Dos santos</h1>
+            <p className="mt-2 text-lg text-muted-foreground">Graphiste &amp; Créatif</p>
             <p className="mt-6 max-w-sm text-sm leading-relaxed text-muted-foreground">
               J'imagine, je compose et je donne forme aux idées pour créer des visuels qui ont du sens.
             </p>
