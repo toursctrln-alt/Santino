@@ -113,6 +113,10 @@ function Index() {
                 Contact <Arrow />
               </a>
             </nav>
+            </div>
+
+              <CardDeck />
+            </div>
           </div>
         </section>
 
