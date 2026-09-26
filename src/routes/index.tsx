@@ -4,7 +4,6 @@ import { toast } from "sonner";
 import avatar from "@/assets/avatar.jpg";
 import { projects, type Project } from "@/components/portfolio/data";
 import { ProjectModal } from "@/components/portfolio/ProjectModal";
-import { SplineBackground } from "@/components/portfolio/SplineBackground";
 
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
@@ -52,14 +51,19 @@ function Index() {
   };
 
   return (
-    <div className="min-h-screen bg-background">
+    <div
+      className="min-h-screen"
+      style={{
+        background:
+          "linear-gradient(180deg, var(--surface) 0%, var(--background) 45%, var(--background) 100%)",
+      }}
+    >
       <div className="mx-auto max-w-6xl px-6 pb-24">
         <header className="flex justify-center py-10">
           <span className="text-sm font-bold tracking-[0.35em] uppercase">Morel</span>
         </header>
 
         <section className="relative isolate py-8">
-          <SplineBackground />
           <div className="relative">
 
             <div className="flex items-center gap-4">
@@ -107,7 +111,6 @@ function Index() {
               </a>
             </nav>
           </div>
-
         </section>
 
         <section id="work" className="scroll-mt-16 pt-24">
