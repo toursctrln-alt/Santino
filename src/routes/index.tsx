@@ -5,7 +5,7 @@ import avatar from "@/assets/avatar.jpg";
 import { projects, type Project } from "@/components/portfolio/data";
 import { ProjectModal } from "@/components/portfolio/ProjectModal";
 import { CardDeck } from "@/components/portfolio/CardDeck";
-import santinoLogo from "@/assets/santino-logo.png.asset.json";
+import santinoLogo from "@/assets/santino-logo.png";
 
 
 import { Dialog, DialogContent } from "@/components/ui/dialog";
