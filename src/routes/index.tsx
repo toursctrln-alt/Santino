@@ -16,13 +16,13 @@ const EMAIL = "hello@claramorel.studio";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Clara Morel — Graphic Designer & Creative" },
+      { title: "Matteo Dos Santos — Graphiste & Créatif" },
       {
         name: "description",
         content:
-          "Portfolio of Clara Morel, a Paris-based graphic designer working across identity, packaging and editorial.",
+          "J'imagine, je compose et je donne forme aux idées pour créer des visuels qui ont du sens.",
       },
-      { property: "og:title", content: "Clara Morel — Graphic Designer & Creative" },
+      { property: "og:title", content: "Matteo Dos Santos — Graphiste & Créatif" },
       {
         property: "og:description",
         content: "Identity, packaging and editorial design from Paris.",
