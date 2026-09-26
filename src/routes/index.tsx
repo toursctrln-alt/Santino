@@ -65,7 +65,9 @@ function Index() {
         </header>
 
         <section className="relative isolate py-8">
-          <div className="relative">
+            <div className="flex flex-col gap-14 md:flex-row md:items-center md:justify-between md:gap-10">
+            <div className="relative">
+
 
             <div className="flex items-center gap-4">
               <div className="relative">
