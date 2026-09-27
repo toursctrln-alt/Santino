@@ -64,6 +64,14 @@
   --color-surface-strong: var(--surface-strong);
   --color-hairline: var(--hairline);
   --color-status: var(--status);
+  --color-about-window: var(--about-window);
+  --color-about-line: var(--about-line);
+  --color-about-red: var(--about-red);
+  --color-about-dot: var(--about-dot);
+  --color-about-note: var(--about-note);
+  --color-about-tape: var(--about-tape);
+  --color-about-link: var(--about-link);
+  --color-about-green: var(--about-green);
 }
 
 :root {
@@ -104,6 +112,14 @@
   --sidebar-border: oklch(0.929 0.013 255.508);
   --sidebar-ring: oklch(0.704 0.04 256.788);
   --status: oklch(0.72 0.17 152);
+  --about-window: oklch(0.976 0.006 264);
+  --about-line: oklch(0.84 0.008 264);
+  --about-red: oklch(0.61 0.22 25);
+  --about-dot: oklch(0.82 0.005 264);
+  --about-note: oklch(0.9 0.17 99);
+  --about-tape: oklch(0.91 0.04 93);
+  --about-link: oklch(0.63 0.13 235);
+  --about-green: oklch(0.67 0.16 145);
 }
 
 
@@ -191,5 +207,55 @@
     background-color: oklch(0.58 0.22 27);
     border-color: oklch(0.58 0.22 27);
     color: #fff;
+  }
+}
+
+@utility about-shadow {
+  box-shadow: 0 14px 34px oklch(0.2 0.02 264 / 12%);
+}
+
+@utility about-photo-shadow {
+  box-shadow: 0 14px 26px oklch(0.2 0.02 264 / 18%);
+}
+
+@utility about-note-shadow {
+  box-shadow: 0 15px 24px oklch(0.35 0.08 85 / 20%);
+}
+
+@utility font-handwritten {
+  font-family: "Comic Sans MS", "Bradley Hand", cursive;
+}
+
+.about-desk {
+  background-color: var(--background);
+  background-image: radial-gradient(var(--about-line) 0.7px, transparent 0.7px);
+  background-size: 18px 18px;
+}
+
+.about-draggable {
+  touch-action: none;
+  cursor: grab;
+  user-select: none;
+  transition: transform 200ms ease, filter 200ms ease;
+  will-change: transform;
+}
+
+.about-draggable:hover {
+  filter: brightness(1.01);
+}
+
+@media (hover: hover) {
+  .about-draggable:hover {
+    transform: translate3d(var(--drag-x, 0), var(--drag-y, 0), 0) scale(1.03);
+  }
+}
+
+.about-draggable:active {
+  cursor: grabbing;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about-draggable {
+    transition: none;
   }
 }

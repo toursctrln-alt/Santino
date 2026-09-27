@@ -4,10 +4,10 @@ import { toast } from "sonner";
 import ninoPortrait from "@/assets/nino-portrait.png";
 import { projects, type Project } from "@/components/portfolio/data";
 import { ProjectModal } from "@/components/portfolio/ProjectModal";
+import { AboutDesk } from "@/components/portfolio/AboutDesk";
 import santinoLogo from "@/assets/santino-logo.png";
 
 
-import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
@@ -41,7 +41,6 @@ function Arrow() {
 
 function Index() {
   const [active, setActive] = useState<Project | null>(null);
-  const [aboutOpen, setAboutOpen] = useState(false);
 
   const copyEmail = async () => {
     try {
@@ -106,12 +105,12 @@ function Index() {
                   >
                     contacte
                   </a>
-                  <button
-                    onClick={() => setAboutOpen(true)}
+                  <a
+                    href="#about"
                     className="pill-hover rounded-full bg-background px-6 py-2 hairline"
                   >
                     à propos
-                  </button>
+                  </a>
                 </nav>
               </div>
 
@@ -159,6 +158,8 @@ function Index() {
             ))}
           </div>
         </section>
+
+        <AboutDesk />
 
         <section id="contact" className="scroll-mt-16 pt-28">
           <div className="grid gap-10 rounded-2xl bg-surface p-8 sm:p-12 lg:grid-cols-2 hairline">
@@ -208,17 +209,6 @@ function Index() {
 
       <ProjectModal project={active} onClose={() => setActive(null)} />
 
-      <Dialog open={aboutOpen} onOpenChange={setAboutOpen}>
-        <DialogContent className="rounded-2xl border-hairline bg-background p-8 sm:max-w-lg">
-          <h2 className="text-2xl font-bold">À propos</h2>
-          <ul className="mt-6 space-y-3 text-sm leading-relaxed text-muted-foreground">
-            <li>— Bac professionnel Graphisme et Plurimédia.</li>
-            <li>— BTS communication visuelle.</li>
-            <li>— Expérience en agence créative et en mairies.</li>
-            <li>— Basé à tours, je donne vie à des projets graphiques à travers l'impression.</li>
-          </ul>
-        </DialogContent>
-      </Dialog>
     </div>
   );
 }
