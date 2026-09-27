@@ -1,10 +1,9 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { toast } from "sonner";
-import avatar from "@/assets/avatar.jpg";
+import ninoPortrait from "@/assets/nino-portrait.png";
 import { projects, type Project } from "@/components/portfolio/data";
 import { ProjectModal } from "@/components/portfolio/ProjectModal";
-import { CardDeck } from "@/components/portfolio/CardDeck";
 import santinoLogo from "@/assets/santino-logo.png";
 
 
@@ -72,62 +71,61 @@ function Index() {
 
 
         <section className="relative isolate py-8">
-            <div className="flex flex-col gap-14 md:flex-row md:items-center md:justify-between md:gap-10 md:px-10 lg:px-20">
-            <div className="relative rounded-2xl bg-surface p-8 sm:p-10 hairline">
+          <div className="mx-auto max-w-4xl overflow-hidden rounded-[2rem] bg-surface hairline">
+            <div className="grid items-center gap-8 md:grid-cols-[1.1fr_0.9fr]">
+              <div className="p-8 sm:p-12">
+                <h1 className="text-5xl font-bold sm:text-6xl">Nino</h1>
+                <p className="mt-1 inline-flex items-center gap-2 text-xs text-muted-foreground">
+                  <span className="relative flex h-2 w-2">
+                    <span className="absolute inline-flex h-full w-full animate-sonar rounded-full bg-status" />
+                    <span className="relative inline-flex h-2 w-2 rounded-full bg-status" />
+                  </span>
+                  Disponible
+                </p>
 
+                <p className="mt-8 text-2xl font-medium">Graphiste et créatif</p>
 
+                <p className="mt-4 max-w-sm text-sm leading-relaxed text-muted-foreground">
+                  J'imagine, je compose et je donne forme aux idées pour créer des visuels qui ont
+                  du sens. Chaque projet est une histoire à raconter, chaque détail compte.
+                </p>
+                <p className="mt-5 max-w-sm text-sm leading-relaxed text-muted-foreground">
+                  Mon objectif : transformer une idée en une image qui marque durablement.
+                </p>
 
-            <div className="flex items-center gap-4">
-              <div className="relative">
-                <img
-                  src={avatar}
-                  alt="Clara Morel"
-                  width={816}
-                  height={816}
-                  className="h-16 w-16 rounded-full object-cover"
-                />
-                <span className="absolute right-0 bottom-0 h-3.5 w-3.5 rounded-full border-2 border-background bg-status" />
+                <nav className="mt-10 flex flex-wrap gap-3 text-sm">
+                  <a
+                    href="#work"
+                    className="pill-hover rounded-full bg-background px-6 py-2 hairline"
+                  >
+                    créations
+                  </a>
+                  <a
+                    href="#contact"
+                    className="pill-hover rounded-full bg-background px-6 py-2 hairline"
+                  >
+                    contacte
+                  </a>
+                  <button
+                    onClick={() => setAboutOpen(true)}
+                    className="pill-hover rounded-full bg-background px-6 py-2 hairline"
+                  >
+                    à propos
+                  </button>
+                </nav>
               </div>
-              <span className="text-xs text-muted-foreground">Available for projects</span>
+
+              <div className="flex items-end justify-center md:justify-end">
+                <img
+                  src={ninoPortrait}
+                  alt="Nino, graphiste et créatif"
+                  width={660}
+                  height={772}
+                  className="w-64 animate-float-soft object-contain sm:w-80"
+                />
+              </div>
             </div>
-
-            <h1 className="mt-8 text-4xl font-bold sm:text-5xl">Matteo Dos Santos</h1>
-            <p className="mt-2 text-lg text-muted-foreground">Graphiste &amp; Créatif</p>
-            <p className="mt-3 inline-flex items-center gap-2 rounded-full bg-background px-3 py-1 text-xs font-medium hairline">
-              Créateur de Santino
-            </p>
-
-            <p className="mt-6 max-w-sm text-sm leading-relaxed text-muted-foreground">
-              J'imagine, je compose et je donne forme aux idées pour créer des visuels qui ont du sens.
-            </p>
-            <p className="mt-6 inline-flex rounded-full bg-surface px-3 py-1 text-xs text-muted-foreground hairline">
-              France / Paris
-            </p>
-
-            <nav className="mt-10 flex flex-wrap gap-6 text-sm font-medium">
-              <a
-                href="#work"
-                className="group inline-flex items-center gap-1 transition-opacity hover:opacity-60"
-              >
-                Work <Arrow />
-              </a>
-              <button
-                onClick={() => setAboutOpen(true)}
-                className="group inline-flex items-center gap-1 transition-opacity hover:opacity-60"
-              >
-                À propos <Arrow />
-              </button>
-              <a
-                href="#contact"
-                className="group inline-flex items-center gap-1 transition-opacity hover:opacity-60"
-              >
-                Contact <Arrow />
-              </a>
-            </nav>
-            </div>
-
-              <CardDeck />
-            </div>
+          </div>
         </section>
 
         <section id="work" className="scroll-mt-16 pt-24">
