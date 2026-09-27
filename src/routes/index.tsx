@@ -103,7 +103,7 @@ function Index() {
                     href="#contact"
                     className="pill-hover rounded-full bg-background px-6 py-2 hairline"
                   >
-                    contacte
+                    contact
                   </a>
                   <a
                     href="#about"
